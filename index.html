@@ -52,13 +52,13 @@
   <!-- Buttons -->
   <a href="https://instagram.com/YOUR_INSTAGRAM" class="btn insta" target="_blank">📷 Instagram</a>
   <a href="https://wa.me/YOURNUMBER" class="btn whatsapp" target="_blank">💬 WhatsApp</a>
-  <a href="files/Sasi_Wonder_Cakes_Menu.pdf" class="btn pdf" target="_blank">📄 View Menu</a>
+  <a href="Sasi_Wonder_Cakes_Menu.pdf" class="btn pdf" target="_blank">📄 View Menu</a>
 
-  <!-- Auto Download -->
+  <!-- Auto Download Script -->
   <script>
     window.onload = function() {
       const link = document.createElement("a");
-      link.href = "files/Sasi_Wonder_Cakes_Menu.pdf"; // PDF path
+      link.href = "Sasi_Wonder_Cakes_Menu.pdf"; // PDF in root
       link.download = "Sasi_Wonder_Cakes_Menu.pdf";
       document.body.appendChild(link);
       link.click();
