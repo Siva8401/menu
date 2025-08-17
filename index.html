@@ -2,20 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=files/myfile.pdf" />
-  <title>Downloading...</title>
+  <title>Sasi Wonder Cakes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      text-align: center;
+      background: #000; /* Black background */
+      color: #f39c12;   /* Orange text */
+      padding: 50px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #f39c12; /* Orange button */
+      color: #000;         /* Black text */
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #000;
+      color: #f39c12;
+      border: 2px solid #f39c12;
+    }
+    .insta { background: #e1306c; color: #fff; }
+    .insta:hover { background: #000; color: #e1306c; border: 2px solid #e1306c; }
+    .whatsapp { background: #25d366; color: #fff; }
+    .whatsapp:hover { background: #000; color: #25d366; border: 2px solid #25d366; }
+    .pdf { background: #f39c12; color: #000; }
+    .pdf:hover { background: #000; color: #f39c12; border: 2px solid #f39c12; }
+  </style>
 </head>
 <body>
-  <p>If the download doesn’t start automatically, <a href="Sasi Wonder Cakes Menu.pdf" download>click here</a>.</p>
-  
+
+  <h1>🍰 Sasi Wonder Cakes</h1>
+  <p>Your menu is downloading... Enjoy our delicious cakes!</p>
+
+  <!-- Buttons -->
+  <a href="https://instagram.com/YOUR_INSTAGRAM" class="btn insta" target="_blank">📷 Instagram</a>
+  <a href="https://wa.me/YOURNUMBER" class="btn whatsapp" target="_blank">💬 WhatsApp</a>
+  <a href="files/Sasi_Wonder_Cakes_Menu.pdf" class="btn pdf" target="_blank">📄 View Menu</a>
+
+  <!-- Auto Download -->
   <script>
-    // Force download automatically
-    const link = document.createElement("a");
-    link.href = "Sasi Wonder Cakes Menu.pdf";
-    link.download = "Sasi Wonder Cakes Menu.pdf"; // File name for user
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.onload = function() {
+      const link = document.createElement("a");
+      link.href = "files/Sasi_Wonder_Cakes_Menu.pdf"; // PDF path
+      link.download = "Sasi_Wonder_Cakes_Menu.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   </script>
+
 </body>
 </html>
