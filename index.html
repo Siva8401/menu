@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=files/myfile.pdf" />
+  <title>Downloading...</title>
+</head>
+<body>
+  <p>If the download doesn’t start automatically, <a href="Sasi Wonder Cakes Menu.pdf" download>click here</a>.</p>
+  
+  <script>
+    // Force download automatically
+    const link = document.createElement("a");
+    link.href = "Sasi Wonder Cakes Menu.pdf";
+    link.download = "Sasi Wonder Cakes Menu.pdf"; // File name for user
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  </script>
+</body>
+</html>
